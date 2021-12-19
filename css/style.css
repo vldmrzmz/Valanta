@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Suisse Intl Trial;
+    src: url(/fonts/SuisseIntl-FreeTrial/Desktop/SuisseIntlTrial-Light.otf); 
+}
+@font-face {
+    font-family: Suisse Intl Trial Medium;
+    src: url(/fonts/SuisseIntl-FreeTrial/Desktop/SuisseIntlTrial-Medium.otf); 
+}
+body {
+    margin: 0; padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    width: 1440px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(180, 167, 252);
+}
+.logo {
+    width: 131px;
+    height: 72px;
+    background-image: url(/images/logo.png);
+    background-size: contain;
+}
+.headerSeparator {
+    width: 1px;
+    height: 40px;
+    margin: 0;
+    transform: rotate(0deg);
+    border: none;
+    background: #E2E2E2;
+}
+.language {
+    text-decoration: none;
+    font-family: Suisse Intl Trial;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+.languageList {
+    list-style: none;
+    margin: 0;padding: 0;
+    text-align: center;
+}
+.selectedLanguage {
+    width: 35px;
+    height: 20px;
+    background: #4AD295;
+    border-radius: 2px;
+}
+.selectedLanguage > .language {
+    position: relative;
+    top: 2px;
+    font-family: Suisse Intl Trial Medium;
+    color: white;
+}
