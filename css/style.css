@@ -1,3 +1,24 @@
+* {
+    margin: 0; padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+@font-face {
+    font-family: Montserrat Semi-Bold;
+    src: url(/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat Bold;
+    src: url(/fonts/Montserrat/Montserrat-Bold.ttf);
+}
 @font-face {
     font-family: Suisse Intl Trial;
     src: url(/fonts/SuisseIntl-FreeTrial/Desktop/SuisseIntlTrial-Light.otf); 
@@ -6,44 +27,56 @@
     font-family: Suisse Intl Trial Medium;
     src: url(/fonts/SuisseIntl-FreeTrial/Desktop/SuisseIntlTrial-Medium.otf); 
 }
-body {
-    margin: 0; padding: 0;
+@font-face {
+    font-family: Suisse Intl Trial Bold;
+    src: url(/fonts/SuisseIntl-FreeTrial/Desktop/SuisseIntlTrial-Bold.otf);
+}
+header {
     display: flex;
     justify-content: center;
 }
 .header {
-    width: 1440px;
+    width: 100%;
     height: 100px;
+    /* background-color:rgb(102, 88, 70); */
+    display: flex;
+    justify-content: center;
+}
+.headerContent {
+    width: 1440px;
+    height: 100%;
 
     display: flex;
     align-items: center;
 
-    background-color: rgb(180, 167, 252);
+    /* background-color: rgba(255, 255, 255, 0.568); */
 }
 .logo {
     width: 131px;
     height: 72px;
-    background-image: url(/images/logo.png);
+    margin-left: 100px;
+    margin-right: 2px;
+    background-image: url(/images/header/logo.png);
     background-size: contain;
 }
 .headerSeparator {
     width: 1px;
     height: 40px;
-    margin: 0;
+    margin: 0 25px;
+
     transform: rotate(0deg);
+
     border: none;
     background: #E2E2E2;
 }
 .language {
-    text-decoration: none;
     font-family: Suisse Intl Trial;
     font-size: 16px;
     text-align: center;
     color: black;
 }
 .languageList {
-    list-style: none;
-    margin: 0;padding: 0;
+    margin-right: 6px;
     text-align: center;
 }
 .selectedLanguage {
@@ -57,4 +90,278 @@ body {
     top: 2px;
     font-family: Suisse Intl Trial Medium;
     color: white;
+}
+.headerSmmPanel{
+    height: 20px;
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+.headerSmm {
+    height: 20px;
+    width: 20px;
+}
+.headerSmm:last-child {
+    position: relative;
+    left: 2px;
+}
+.headerSmm:first-child {
+    position: relative;
+    left: 5px;
+}
+.headerPhone {
+    width: 128px;
+    height: 21px;
+
+    color: #000;
+
+    font-family: Suisse Intl Trial Bold;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+
+    text-align: center;
+    color: #393939;    
+}
+.headerPhoneIcon {
+    width: 39px;
+    height: 39px;
+    background-image: url(/images/header/smartphone.png);
+}
+.maistraOnline {
+    width: 240px;
+    height: 55px;
+
+    background: #EFF3F6;
+    border-radius: 2px;
+    margin-right: 48px;
+}
+.maistraText {
+    width: 145px;
+    height: 20px;
+
+    font-family: Montserrat Semi-Bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 17px;
+    margin-left: 21px;
+
+    color: #373737;
+}
+.maistraIcon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #DD4053;
+    border-radius: 2px;
+
+    position: relative;
+    bottom: 37px;
+    left: 185px;
+}
+.book {
+    width: 20px;
+    height: 20px;
+    background-position: center top;
+    background-image: url(/images/header/book.png);
+}
+.toursOnline {
+    width: 205px;
+    height: 55px;
+
+    background: #EFF3F6;
+    border-radius: 2px;
+}
+.searchIcon {
+    background: #4AD295;
+}
+.search {
+    background:no-repeat;
+    background-image: url(/images/header/search.png);
+}
+/* ======== Intro ======== */
+.introNav {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+}
+.introNavContent {
+    width: 1093px;
+    height: 42px;
+
+    display: flex;
+    align-items: stretch;
+
+    background-color: rgb(255, 255, 255);
+}
+.introNavSearchIcon {
+    width: 19px;
+    height: 17.17px;
+    
+    background-image: url(/images/intro/search.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+
+    background-size: cover;
+    margin-right: 60px;
+}
+.introSelectPanel {
+    width: 1014px;
+    height: 42px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+.introSelectPanel a{    
+    font-family: Suisse Intl Trial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #616161;
+}
+.introSelectPanel a:hover {
+    color: #2570d1;
+}
+select {
+    background: none;
+    border: 0 solid black;
+    outline: 0 solid black;
+}
+.introBg {
+    width: 100%;
+    height: 490px;
+
+    background-image: url(/images/intro/intro_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introBgDradient {
+    width: 100%;
+    height: 490px;
+    
+    background: linear-gradient(180deg, rgba(25, 25, 31, 0.281) 29.48%, 
+    #000000e7 100%);
+    opacity: 0.9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.introContent {
+    width: 1400px;
+    height: 100%;
+    padding-left: 195px;
+    padding-top: 104px;
+    box-sizing: border-box;
+}
+.introBtn {
+    width: 249px;
+    height: 45px;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    transition: .13s linear;
+    
+    padding: 6px 21px 7px 23px;
+    margin-left: 4px;
+}
+.introBtn:hover {
+    border: 1px solid #02a2ff;   
+}
+.introBtn:hover .introBtnText {
+    color: #02a2ff;      
+}
+.introBtnText {
+    width: 205px;
+    height: 32px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+    transition: .13s linear;
+}
+.introH {
+    width: 725px;
+    height: 102px;
+
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+    margin-top: 12px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.introBtn2 {
+    width: 270px;
+    height: 60px;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
+
+    transition: 130ms linear;
+
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding: 18px 85px 22px 86px;
+}
+.introBtn2Text {
+    width: 99px;
+    height: 20px;
+
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #FFF;
+}
+.introBtn2:hover {
+    background: rgba(255, 255, 255, 0.350);
+}
+.sliderDot {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.sliderDotList {
+    display: flex; 
+    margin-top: 56px;   
+}
+.fullDot {
+    background: #fff;
+}
+.emptyDot {
+    opacity: 0.5;  
 }
