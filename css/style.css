@@ -32,15 +32,16 @@ ul {
     src: url(/fonts/SuisseIntl-FreeTrial/Desktop/SuisseIntlTrial-Bold.otf);
 }
 header {
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
 }
-.header {
+.headerBottomLine {
     width: 100%;
-    height: 100px;
-    /* background-color:rgb(102, 88, 70); */
-    display: flex;
-    justify-content: center;
+    height: 1px;
+
+    background: #D0D0D0;
 }
 .headerContent {
     width: 1440px;
@@ -48,8 +49,6 @@ header {
 
     display: flex;
     align-items: center;
-
-    /* background-color: rgba(255, 255, 255, 0.568); */
 }
 .logo {
     width: 131px;
@@ -109,13 +108,13 @@ header {
     position: relative;
     left: 5px;
 }
-.headerPhone {
+.headerPhone {  
     width: 128px;
     height: 21px;
 
     color: #000;
 
-    font-family: Suisse Intl Trial Bold;
+    font-family: Colibri;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
@@ -124,8 +123,14 @@ header {
     color: #393939;    
 }
 .headerPhoneIcon {
-    width: 39px;
-    height: 39px;
+    width: 43px;
+    height: 43px;
+
+    margin-left:10px;
+    position: relative;
+    left: 3px;
+
+    background-size: cover;
     background-image: url(/images/header/smartphone.png);
 }
 .maistraOnline {
@@ -236,12 +241,23 @@ header {
     color: #616161;
 }
 .introSelectPanel a:hover {
-    color: #2570d1;
+    color: #171717;
 }
 select {
+    font-family: Suisse Intl Trial;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+
     background: none;
     border: 0 solid black;
     outline: 0 solid black;
+    height: 19px;
+    cursor: pointer;
+    
+    color: #616161;
 }
 .introBg {
     width: 100%;
@@ -364,4 +380,531 @@ select {
 }
 .emptyDot {
     opacity: 0.5;  
+}
+/* Content */
+main {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainContent {
+    width: 1440px;
+    flex-direction: column;
+}
+/* Benefits */
+.benefitsContent {
+    width: 100%;
+    height: 250px;
+    background: #f8f8f8;
+
+    display: flex;
+    justify-content: center;
+}
+.ourBenefits {
+    width: 1440px;
+    height: 250px;
+
+    padding: 53px 121px 0 198px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}
+.benefitsHeader {
+    width: 624px;
+    height: 72px;
+
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #1D1D1D;
+}
+.benefitsCaption {
+    width: 335px;
+    height: 28px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-top: 15px;
+
+    color: #777777;
+}
+.benefitsButtons {
+    display: flex;
+    margin-top: 20px;
+}
+/* btn1 */
+.benefitBtn1 {
+    width: 270px;
+    height: 50px;
+
+    background: #BDBDBD;
+    border-radius: 2px;
+
+    box-sizing: border-box;
+    padding: 15px 44px;
+    margin-right: 30px;
+
+    transition: 150ms linear;
+}
+.benefitBtn1Text {
+    width: 182px;
+    height: 20px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    transition: 150ms linear;
+}
+.benefitBtn1:hover .benefitBtn1Text{
+    color: rgb(105, 105, 105);
+}
+.benefitBtn1:hover {
+    background-color: #d6d6d6;
+
+}
+/* btn2 */
+.benefitBtn2 {
+    width: 220px;
+    height: 50px;
+
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    box-sizing: border-box;
+    padding: 15px 48px 15px 50px;
+    transition: 150ms linear;
+}
+.benefitBtn2Text {
+    width: 122px;
+    height: 20px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #969696;
+
+    transition: 150ms linear;
+}
+.benefitBtn2:hover .benefitBtn2Text{
+    color: rgb(255, 255, 255);
+}
+.benefitBtn2:hover {
+    background-color: #bbbbbbd3;
+    border: 1px solid #bbbbbbd3;
+}
+.benefitEllipse {
+    width: 45px;
+    height: 45px;
+
+    border: 1.2px dashed #969696;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.164));
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefitsIcons {
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.benefitsRight {
+    display: flex;
+    margin-left: 62px;
+}
+.benefitIconCaption {
+    width: 370px;
+    height: 198px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 66px;
+
+    color: #3D3D3D;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-bottom: 2px;
+    margin-left: 20px;
+
+}
+.benefitsIcons {
+    position: relative;
+    top: 7px;
+}
+/*  Best Hotels */
+.bestHotels {
+    width: 1440px;
+    height: 545px;
+    padding-top: 90px;
+}
+.containerHeaderPanel {
+    width: 1440px;
+    display: flex;
+    align-items: flex-end;
+}
+.containerHeaderText {
+    width: 411px;
+    height: 43px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+
+    margin-left: 198px;
+
+    color: #232323;
+}
+.bestHotelPointers {
+    display: flex;
+}
+.bestHotelPointers li {
+    position: relative;
+    top: 6px;
+
+    margin-right: 20px;
+}
+.bestHotelsElipse {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #454545;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.bestHoteslArrow {
+    position: relative;
+    top: 20px;
+    left: 6px;
+}
+.bestHotelPointers li:last-child{
+    transform: rotate(180deg)
+}
+.containerContentLine {
+    width: 237px;
+    height: 1px;
+    
+    position: relative;
+    top: -18px;
+    margin-left: 58px;
+    margin-right: 26px;
+
+    background: #C4C4C4;
+}
+.containerHeaderBtn {
+    width: 140px;
+    height: 45px;
+
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    border-radius: 2px;
+    
+    padding: 14px 32px;
+    transition: 140ms linear;
+
+    position: relative;
+    top: 5px;
+}
+.containerHeaderBtnText {
+    width: 76px;
+    height: 17px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    
+    color: #969696;
+    transition: 140ms linear;
+}   
+.containerHeaderBtn:hover .containerHeaderBtnText{
+    color: rgb(255, 255, 255);
+}
+.containerHeaderBtn:hover {
+    background-color: #bbbbbbd3;
+    border: 1px solid #bbbbbbd3;
+}
+.bestHotelsCardPanel {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 54px;
+}
+.bestHotelsCard {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bestHotelsCard .actualToursCardLabel{
+    left:0;
+    top: 20px;
+}
+.bestHotelsStarList {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 180px;
+}
+.bestHotelsStarList li {
+    margin: 0 2.625px;
+}
+.bestHotelsCardText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 228px;
+}
+/* Actual tours */
+.actualTours {
+    width: 1440px;
+    padding: 100px 115px 131px 115px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actualToursHeader {
+    width: auto;
+    margin-left: 200px;
+}
+.actualToursLine {
+    width: 340px;
+    position: relative;
+    margin-left: 56px;
+}
+.actualToursBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actualToursHeaderBtnText {
+    width: 95px;
+    height: 17px;
+}
+.actualToursContentPanel { 
+    display: flex;
+    align-items: flex-start;
+}
+.actualToursCardPanel {
+    width: 1039px;
+    height: 480px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    margin: 40px 36px 0px 35px;
+}
+.actualToursCard {
+    width: 327px;
+    height: 480px;
+
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    flex-direction: column;
+
+    background: #F8F8F8;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    transition: 150ms linear;
+
+    color: #323232;
+}
+.actualToursCard:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.actualToursCardLabel {
+    max-width: 195px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+
+    padding: 3px 13px 3px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    z-index: 2;
+
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.35);
+}
+.actualToursCardImg {
+    position: relative;
+    top: 0;
+}
+.actualToursCardPricePanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actualToursCardPrice {
+    width: 73px;
+    height: 32px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;  
+    line-height: 34px;  
+
+    color: #DD4053;
+    margin: 23px 0 0 0;
+}
+.actualToursCardOt {
+    width: 18px;
+    height: 34px;
+    font-family: 
+    Suisse Intl Trial;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    text-transform: lowercase;
+
+    margin: 26px 2px 0 0;
+
+    color: #DD4053;
+}
+.perSeason {  
+    position: relative;
+    top: -15px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 34px;
+    text-transform: lowercase;
+
+    color: #C9C9C9;
+}
+.atualToursPriceLeft {
+    display: flex;
+    flex-direction: column;
+}
+.actualToursPriceText {
+    width: 79px;
+    height: 36px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    margin-right: 25px;
+
+    position: relative;
+    top: 5px;
+
+    color: #3E3E3E;
+}
+.actualToursCard img{
+    position: relative;
+    left: -20px;
+    margin-bottom: 7px;
+}
+.actualToursCardCaption {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: lowercase;
+
+    margin-top: 15px;
+    color: #848484;
+}
+.firstCaption {
+    margin-top: 40px;
+}
+.actualToursList{
+    display: flex;
+}
+.actualToursList .rotate{
+    transform: rotate(180deg);
+}
+.actualToursList li{
+    display: flex;
+    align-items: center;
+}
+.actualToursNav {
+    width: 1042px;
+    height: 146px;
+
+    margin-top: 60px;
+
+    background:#F8F8F8;
+}
+.actualToursNavLine{
+    width: 1042px;
+    height: 6px;
+
+    background: #969696;
+}
+.actualToursCardLine {
+    margin-left: 0;
+    width: 280px;
+    position: relative;
+    top: 0;
+    margin-top: 19px;
 }
