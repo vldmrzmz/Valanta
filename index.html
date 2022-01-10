@@ -368,6 +368,39 @@
             
             <div class="actualToursNav">
                 <div class="actualToursNavLine"></div>
+                <div class="actualToursNavLineContent">
+                    <form action="">
+                        <select class="selectCity">
+                            <option>Киев</option>
+                            <option>Харьков</option>
+                            <option>Днепр</option>
+                        </select>
+                        <select class="selectCountry">
+                            <option value="" hidden disabled selected>Выберете страну </option>
+                            <option>Черногория</option>
+                            <option>Истра</option>
+                            <option>Доминикана</option>
+                        </select> 
+                        <select class="noBorder selectDate">
+                            <option value="" hidden disabled selected>От </option>
+                            <input type="date" class="dateChose" name="trip-start"
+                                value="2020-01-10"
+                                min="2020-01-10" max="2023-01-10">
+                        </select> 
+                        <select class="selectDate">
+                            <option value="" hidden disabled selected>До </option>
+                            <input type="date" class="dateChose" name="trip-start"
+                                value="2020-01-10"
+                                min="2020-01-10" max="2023-01-10">
+                        </select> 
+                        <select class="selectPeople">
+                            <option>Один взрослый</option>
+                            <option selected>Два взрослых</option>
+                            <option>Ребенок + Взрослый</option>
+                            <option>Семья(до 4 чел)</option>
+                        </select>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -593,10 +626,15 @@
                     <h1 class="feedbackBlockHeaderText">ПУТЕШЕСТВУЙ С Valanta Travel Company!</h1>
                     <p class="feedbackBlockHeaderCaption ">Подписывайтесь на нашу рассылку, чтобы получать самые горячие предложения</p>
                     <div class="feedbackBlockBottomContent">
+                        <form action="">
                         <input class="feedbackBlockEmail" placeholder="Email"></input>
+                            <input type="radio" class="feedbackRadioTourist" value="1"name="radio2">
+                            <label class="feedbackRatioText">Я турист</label>
+                            <input type="radio" class="feedbackRadioTourist "value="2" name="radio2">
+                            <label class="feedbackRatioText">Я турагент</label> 
+                        </form>    
+                        <div class="feedbackSendBtn"><p>Отправить</p></div>
                         
-                        <input type="radio" class="feedbackRaioTourist">
-                        <label>Я турист</label>
                     </div>
                     
                 <!-- </div> -->

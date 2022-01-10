@@ -887,6 +887,13 @@ main {
     display: flex;
     align-items: center;
 }
+.actualToursCardLine {
+    margin-left: 0;
+    width: 280px;
+    position: relative;
+    top: 0;
+    margin-top: 19px;
+}
 .actualToursNav {
     width: 1042px;
     height: 146px;
@@ -901,12 +908,74 @@ main {
 
     background: #969696;
 }
-.actualToursCardLine {
-    margin-left: 0;
-    width: 280px;
-    position: relative;
-    top: 0;
-    margin-top: 19px;
+.dateChose {
+    display: none;
+}
+form select .selectDate:focus .dateChose {
+    display: block;
+}
+.selectCity {
+    width: 103px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.selectCountry {
+    width: 213px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.selectDate {
+    width: 110px;
+    box-sizing: border-box;
+    padding-left: 22px;     
+}
+.selectPeople {
+    width: 190px;
+    box-sizing: border-box;
+    padding-left: 25px;     
+}
+.selectNights {
+    width: 149px;
+    box-sizing: border-box;
+    padding-left: 22px;     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.actualToursNavLineContent {
+    width: 825px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(46, 46, 46, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 2340px;
+    margin-left: 30px;
+}
+.actualToursNavLineContent select {
+    height: 100%;
+    border-right: 1px rgba(46, 46, 46, 0.2) solid;
+}
+.actualToursNavLineContent form {
+    height: 49px;
 }
 /* Important News */
 .importantNewsContent {
@@ -1151,7 +1220,6 @@ main {
     justify-content: center;
 
     background: #DD4053;
-    background-color: #b9b68b;
 }
 .feedbackBlockContent {
     width: 1440px;
@@ -1204,13 +1272,13 @@ main {
 .feedbackBlockBottomContent {
     width: 1038px;
     height: 50px;
-    background-color: #b9b68b;
 }
 .feedbackBlockEmail {
     width: 410px;
     height: 50px;
 
     padding: 19px 20px 15px 15px;
+    margin-right: 51px;
     box-sizing: border-box;
 
     background: rgba(255, 255, 255, 0.2);
@@ -1227,7 +1295,40 @@ input::placeholder {
 
     color: #FFFFFF;
 }
-.feedbackRaioTourist:not(:disabled):active+label::before{
-    background: red;
-    border: red
+form {
+    width: 760px;
+    margin: 0;
+}
+form label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-left: 20px;
+    margin-right: 40px;
+
+    color: #FFFFFF;
+}
+.feedbackSendBtn {
+    width: 237px;
+    height: 50px;
+
+    position: absolute;
+    left: 1233px;
+    top: 3912px;
+
+    box-sizing: border-box;
+    padding: 16px 72px 15px 77px;
+
+    background: #FFFFFF;
+    color: #Da2032;
+    border-radius: 2px;
+
+    transition: 120ms linear;
+}
+.feedbackSendBtn:hover {
+    background: #e09191;
+    color: rgb(255, 255, 255);
 }
