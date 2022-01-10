@@ -908,3 +908,326 @@ main {
     top: 0;
     margin-top: 19px;
 }
+/* Important News */
+.importantNewsContent {
+    width: 100%;
+    height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F8F8F8;
+}
+.importantNews {
+    width: 1440px;
+    height: 620px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 94px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+}
+.importantNewsHeaderText {
+    height: 43px;
+    width: 480px;
+
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.importantNewsList .bestHotelsElipse {
+    position: relative;
+    /* top: 49px; */
+    left: -34px;
+}
+.importantNewsList > li:last-child {
+    position: relative;
+    top: 1px;
+    left: 14px;
+}
+.importantNewsHeaderPanel {
+    margin-bottom: 72px;
+}
+.importantNewsCardPanel {
+    width: 1041px;
+    height: 315px;
+
+    display: flex;
+}
+.importantNewsCard {
+    width: 252px;
+    height: 315px;
+
+    flex-direction: column;
+
+    margin-right: 14px;
+    border-right: 1px #EEEEEE solid;
+}
+.importantNewsCardDate {
+    width: 134px;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+
+    color: #BBBBBB;
+}
+.noBorder {
+    border: 0;
+}
+.importantNewsCardDateText {
+    width: 109px;
+    height: 25px;
+    
+    position: relative;
+    top: -2px;
+    
+    margin-left: 3px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+}
+.importantNewsCardDateHeader {
+    width: 195px;
+    height: 49px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #323232;
+    margin-bottom: 25px;
+}
+.importantNewsCardDateMore {
+    width: 77px;
+    height: 24px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    border-bottom: 1px #232323 solid;
+    transition: 100ms linear;
+    color: rgb(23, 23, 23);
+    
+}
+.importantNewsCardDateMore:hover {
+    color: #DD4053;
+    border-bottom: 1px #DD4053 solid;
+}
+/* Blog */
+.blog{
+    width: 1440px;
+    height: 615px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #FFF;
+}
+.blogLine {
+    width: 680px;
+}
+.blogHeaderText {
+    width: auto;
+
+    margin: 0 4px 0 201px;
+}
+.blogHeaderPanel {
+    display: flex;
+    margin-top: 90px;
+}
+.blogContent {
+    width: 1440px;
+    height: 320px;
+
+    margin-top: 72px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.blogPointers {
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 82px 16px 0 117px;
+}
+.blogCardPanel {
+    width: 1293px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.blogCard {
+    width: 300px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+.blogCardImg {
+    margin: 15px;
+}
+.blogCardHeader {
+    margin-left: 21px;
+    margin-bottom: 20px;
+}
+.blogCardDate {
+    width: 228px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+}
+.blogCardDateLeft {
+    width: 200px;
+    display: flex;
+    margin-left: 17px;
+}
+.blogCardDateText {
+    margin-top: 0;
+}
+.blogCardDateRight { 
+    max-width: 67px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.blogCardDateRight img {
+    margin-right: 15px;
+}
+.blogDateMore {
+    margin-left: 20px;
+    border: 0;
+}
+.blogDateMore:hover {
+    filter: invert(17%) sepia(100%) saturate(7441%) 
+    hue-rotate(2deg) brightness(95%) contrast(113%);
+    border: 0;
+}
+.blogDateMore img{
+    position: relative;
+    left: 118px;
+    top: -16px;
+}
+.planeImg {
+    position: absolute;
+    top: 2997px;
+    left: 792px;
+    z-index: 2;
+}
+/* Feedback block */
+.feedbackBlock {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background: #DD4053;
+    background-color: #b9b68b;
+}
+.feedbackBlockContent {
+    width: 1440px;
+    height: 255px;
+
+    box-sizing: border-box;
+    padding: 58px 200px 61px 200px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background: #DD4053;
+}
+.feedbackWaveImg {
+    position: absolute;
+    left: 970px;
+    top: 3760px;
+}
+/* .feedbackBlockTopContent {
+    width: 1038px;
+
+    
+} */
+.feedbackBlockHeaderText {
+    width: 618px;
+    height: 55px;
+
+    margin-left: 1px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 55px;
+
+    color: #FFFFFF;
+}
+.feedbackBlockHeaderCaption {
+    width: 363px;
+    height: 52px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
+    color: #EFEFEF;
+}
+.feedbackBlockBottomContent {
+    width: 1038px;
+    height: 50px;
+    background-color: #b9b68b;
+}
+.feedbackBlockEmail {
+    width: 410px;
+    height: 50px;
+
+    padding: 19px 20px 15px 15px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+input::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+.feedbackRaioTourist:not(:disabled):active+label::before{
+    background: red;
+    border: red
+}
