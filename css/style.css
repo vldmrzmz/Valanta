@@ -1126,6 +1126,8 @@ main {
 .blogDateMore {
     margin-left: 20px;
     border: 0;
+    position: relative;
+    z-index: 3;
 }
 .blogDateMore:hover {
     filter: invert(17%) sepia(100%) saturate(7441%) 
@@ -1146,12 +1148,11 @@ main {
 /* Feedback block */
 .feedbackBlock {
     width: 100%;
-
     display: flex;
     justify-content: center;
 
     background: #DD4053;
-    background-color: #b9b68b;
+    z-index: 2;
 }
 .feedbackBlockContent {
     width: 1440px;
@@ -1169,17 +1170,13 @@ main {
     position: absolute;
     left: 970px;
     top: 3760px;
-}
-/* .feedbackBlockTopContent {
-    width: 1038px;
-
-    
-} */
+} 
 .feedbackBlockHeaderText {
     width: 618px;
     height: 55px;
 
     margin-left: 1px;
+    margin-right: 3px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -1201,10 +1198,10 @@ main {
     
     color: #EFEFEF;
 }
-.feedbackBlockBottomContent {
+.feedbackBlockBottomContent {   
     width: 1038px;
     height: 50px;
-    background-color: #b9b68b;
+    margin-top: 21px;
 }
 .feedbackBlockEmail {
     width: 410px;
@@ -1218,6 +1215,14 @@ main {
     box-sizing: border-box;
     border-radius: 2px;
 }
+.feedbackBlockLabel {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    margin-left: 40px;
+    margin-right: 24px;
+}
 input::placeholder {
     font-family: Montserrat;
     font-style: normal;
@@ -1227,7 +1232,162 @@ input::placeholder {
 
     color: #FFFFFF;
 }
-.feedbackRaioTourist:not(:disabled):active+label::before{
-    background: red;
-    border: red
+.feedbackBlockForm {
+    /* width: 350px; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 3935px;
+    left: 709px;
+}
+.checkboxes{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.checkboxes .check{
+    background-color:#ffffff;
+    width:15px;
+    height:15px;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    position: relative;
+    background-color:#DD4053;
+    top: -1px;
+    
+}
+.checkboxes input[type=checkbox]{
+    display:none
+}
+.checkboxes input[type=checkbox]:checked + .check{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.checkboxes input[type=checkbox]:checked + .check:after{
+    position:absolute;
+    content:"\2713";
+    color:#DD4053;
+    font-size: 15px; 
+}
+.feedbackBlockSendBtn {
+    width: 237px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border-radius: 2px;
+    color: #DD4053;
+    transition: 130ms linear;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;  
+
+    position: absolute;
+    left: 1005px;
+    top: 3922px;
+}
+.feedbackBlockSendBtn:hover {
+    width: 237px;
+    height: 50px;
+
+    background: #ffa1aa;
+    color: #ffffff;
+    border-radius: 2px;
+}
+/* Footer */
+footer {
+    width:100%;
+    height: 371px;
+
+    background: url(/images/footer/footerimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -1px;
+    z-index: 0;
+}
+.footer{
+    width: 1440px;
+    padding: 130px 202px 68px 201px;
+    box-sizing: border-box;
+}
+.footerContent {
+    width: 1037px;
+    height: 172px;
+
+    display: flex;
+    flex-direction: column;
+}
+.footerTop {
+    height: 128px;
+    display: flex;
+}
+.footerTop img{
+    margin-bottom: 41px;
+    margin-right: 157px;
+}
+.footerContent hr {
+    background-color: #C4C4C4;
+    margin-bottom: 22px;
+}
+.footerText {
+    font-family: Suisse Intl Trial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #3E3E3E;
+}
+.textList {
+    height: 91px;
+    width: 233px;
+    margin-right: 86px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.footerH {
+    font-family: Suisse Intl Trial;
+    font-size: 12px;
+    color: #3E3E3E;
+    opacity: 0.5;
+
+    text-transform: uppercase;
+}
+.footerContacts {
+    margin-left: 85px;
+}
+.footerContacts a{
+   position: relative;
+   top: 25px;
+}
+.footerCaption {
+    font-family: Suisse Intl Trial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: rgba(62, 62, 62, 0.5);
+}
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
 }
